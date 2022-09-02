@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto PTI</title>
+    <link rel="stylesheet" href="JavaScriptPTI.js">
+</head>
+<body>
+    <script>
+        {
+            var pergunta, preco_gasolina, preco_etanol, calculadora, repetir;
+        
+            pergunta=confirm("Iniciar calculo de qual combustivel abastecer?");
+        
+            alert("Lembrete: Insira o valor do litro de combustível atual")
+                if(pergunta==true)
+                
+                    do{
+                        preco_gasolina=prompt("Valor do litro da gasolina");
+                        preco_etanol=prompt("Valor do litro do etanol");
+                            preco_gasolina=parseInt(preco_gasolina);
+        
+                        calculadora=preco_etanol/preco_gasolina;
+                            if(calculadora<0.7){
+                                alert("O abastecimento mais vantajoso é com o etanol.");
+                            }
+                            else if(calculadora>0.7){
+                                alert("O abastecimento mais vantajoso é com a gasolina.");
+                            }
+                            else if(calculadora=0.7){
+                                alert("Tanto faz com qual combustível abastecer.");
+                            }
+                            repetir=confirm("Fazer o calculo novamente?");
+                            }   
+                            while(repetir==true){
+                            alert("Espero ter ajudado!");
+                            }
+            }
+        </script>
+</body>
+</html>
